@@ -21,7 +21,7 @@
 					<ul>
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li><a href="#">Магазины</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li><a class="bascket" href="#">Корзина</a></li>
 					</ul>
@@ -69,13 +69,13 @@
 					<a class="products-btn products-btn-1" href="#">Заказать</a>
 				</div>
 				<div class="products-item ">
-					<img class="products-img" src="img/products-2.png" width="240" height="124" alt="product-2">
+					<div class="products-img products-img-2"></div>
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
 					<a class="products-btn products-btn-2" href="#">Заказать</a>
 				</div>
 				<div class="products-item">
-					<img class="products-img" src="img/products-3.png" width="240" height="124" alt="product-3">
+					<div class="products-img products-img-3"></div>
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="products-btn products-btn-3" href="#">Заказать</a>
@@ -145,6 +145,25 @@
 			</div>
 		</div>
 	</footer>
+	 <div class="modal-content">
+	 	<div class="close-btn" title="Закрыть">Закрыть</div>
+		<form class="write-us-form" action="#" method="post">
+			<div class="clearfix">
+				<div class="col-50">
+					<label for="user-name">Ваше имя:</label>
+					<input id="user-name" type="text" name="user-name" value="" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="col-50">
+					<label for="user-email">Ваш e-mail:</label>
+					<input id="user-email" type="email" name="user-email" value="" placeholder="для отправки ответа">
+				</div>
+			</div>
+			<label for="user-message">Текст письма:</label>
+			<textarea id="user-message" type="textarea" name="user-message" rows="4" placeholder="В свободной форме"></textarea>
+			<button class="submit-btn" type="submit" name="" value="">Отправить</button>
+		</form>
+	</div>
+	<script src="js/modal.js"></script>
 	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=pNVgt0KTNb8zN4novmGZpKS4KS4lNu_Y&amp;width=100%25&amp;height=416&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
 </body>
 </html>
