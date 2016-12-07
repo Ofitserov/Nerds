@@ -60,6 +60,7 @@ p, h1, h4 {
 }
 .main-navigation li {
 	display: inline-block;
+	vertical-align: baseline;
 	font-size: 14px;
 	padding-top: 55px;
 	margin-right: 40px;
@@ -141,6 +142,7 @@ p, h1, h4 {
 .slider label {
 	position: relative;
 	display: inline-block;
+	vertical-align: baseline;
 	width: 4px;
 	height: 4px;
 	margin-right: 12px;
@@ -392,6 +394,7 @@ p, h1, h4 {
 }
 .portfolio .portfolio-item {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-right: 50px;
 	width: 260px;
 	min-height: 165px;
@@ -474,6 +477,7 @@ p, h1, h4 {
 }
 .social-btn {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-right: 25px;
 	width: 62px;
 	height: 62px;
@@ -585,6 +589,11 @@ p, h1, h4 {
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
+	cursor: pointer;
+}
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+	border: 2px solid #a2a9ac;
 }
 .write-us-form input::-webkit-input-placeholder {
 	color: #000000;
@@ -611,6 +620,7 @@ p, h1, h4 {
 	cursor: pointer;
 }
 /* Inner pages */
+
 .inner-main {
 	padding: 80px 0;
 }
@@ -622,4 +632,375 @@ p, h1, h4 {
 .inner-main .column-right {
 	float: left;
 	width: 560px;
+}
+.sorting-form p {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 30px;
+}
+.sorting-form .form-block {
+	margin-bottom: 50px;
+}
+.sorting-form .range-slider {
+	position: relative;
+	margin-bottom: 15px;
+	width: 240px;
+	height: 80px;
+	border-radius: 3px;
+	background: #f1f1f1;
+}
+.sorting-form .range-slider::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	margin-top: -1px;
+	height: 2px;
+	width: 200px;
+	background: #d7dcde;
+}
+.sorting-form .range-slider::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	margin-top: -1px;
+	height: 2px;
+	width: 120px;
+	background: #00ca74;
+}
+.range-slider .left-control,
+.range-slider .right-control {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ffffff;
+	box-shadow: 0 2px  rgba(0, 0, 0, 0.14);
+}
+.range-slider .left-control::before,
+.range-slider .right-control::before {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background: #ababab;
+}
+.range-slider .left-control {
+	left: 20px;
+}
+.range-slider .right-control {
+	right: 60px;
+}
+.range-input input[type="text"] {
+	box-sizing: border-box;
+	margin: 0 5px;
+	padding: 10px;
+	width: 80px;
+	height: 38px;
+	border-radius: 3px;
+	border: none;
+	text-align: center;
+	background: #f1f1f1;
+}
+.range-input input[type="text"]:last-of-type {
+	margin-right: 0;
+}
+.range-input label:last-of-type {
+	margin-left: 17px;
+}
+.sorting-form input[type="radio"],
+.sorting-form input[type="checkbox"] {
+	display: none;
+}
+.sorting-form .radio,
+.sorting-form .checkbox {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	height: 25px;
+	padding-top: 3px;
+	padding-left: 35px;
+	color: #283136;
+	cursor: pointer;
+}
+.sorting-form .radio:hover,
+.sorting-form .checkbox:hover {
+	color: #000000;
+}
+.sorting-form .radio::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	border: 4px solid #c1c1c1;
+	background: inherit;
+	cursor: pointer;
+}
+.sorting-form .radio:hover::before {
+	border: 4px solid #b5b5b5;
+}
+.sorting-form input[type="radio"]:checked + .radio::after {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #c1c1c1;
+}
+.sorting-form input[type="radio"]:checked + .radio:hover::after {
+	background: #b5b5b5;
+}
+.sorting-form .checkbox {
+	padding-top: 1px;
+}
+.sorting-form .checkbox::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 23px;
+	height: 23px;
+	opacity: 0.8;
+	background: url('../img/inner-sprite.png') no-repeat -5px -125px;
+}
+.sorting-form .checkbox:hover::before {
+	opacity: 1;
+}
+.sorting-form input[type="checkbox"]:checked + .checkbox::after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 27px;
+	height: 23px;
+	opacity: 1;
+	background: url('../img/inner-sprite.png') no-repeat -5px -158px;
+}
+.sorting-form .submit-btn {
+	width: 160px;
+	height: 38px;
+	border: none;
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	font-family: inherit;
+	background: #f1f1f1;
+	cursor: pointer;
+	outline: none;
+}
+.sorting-form .submit-btn:hover {
+	background: #e5e5e5;
+}
+.sorting-form .submit-btn:active {
+	box-sizing: border-box;
+	border-top: 3px solid #b5b5b5;
+	background: #d5d5d5;
+}
+.sorting {
+	margin-bottom: 28px;
+}
+.sorting .type-sorting {
+	float: left;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.sorting .range-sorting {
+	float: right;
+}
+.sorting .type-sorting a {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 40px;
+	color: #dadada;
+	text-decoration: none;
+	font-weight: 400;
+	border-bottom: 1px dashed #00ca74;
+}
+.sorting .type-sorting a:hover {
+	color: #000000;
+	border-bottom: 1px solid #00ca74;
+}
+.sorting .type-sorting a:active,
+.sorting .type-sorting a.active {
+	color: #000000;
+	border-bottom: none;
+}
+.range-sorting a {
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 0;
+	width: 11px;
+	height: 10px;
+	margin-left: 5px;
+	background: url('../img/inner-sprite.png') no-repeat;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.range-sorting .minimum {
+	background-position: -5px -5px;
+}
+.range-sorting .maximum {
+	background-position: -5px -65px;
+}
+.range-sorting .minimum:hover {
+	opacity: 1;
+}
+.range-sorting .maximum:hover {
+	opacity: 1;
+}
+.range-sorting .minimum:active {
+	background-position: -5px -45px;
+}
+.range-sorting .maximum:active {
+	background-position: -5px -105px;
+}
+.range-sorting .minimum.active {
+	background-position: -5px -25px;
+}
+.range-sorting .maximum.active {
+	background-position: -5px -85px;
+}
+/* Goods */
+.goods {
+	font-size: 0;
+}
+.goods .goods-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+	margin-bottom: 80px;
+	padding-top: 30px;
+	width: 240px;
+	height: 240px;
+	border-radius: 3px;
+	font-size: 16px;
+	background: #f1f1f1;
+	z-index: 99;
+}
+.goods .goods-item:nth-child(2n) {
+	margin-left: 80px;
+}
+.goods .goods-item img {
+	width: 240px;
+	height: 240px;
+	cursor: pointer;
+
+}
+
+.goods-item .controls,
+.goods-item .controls::before,
+.goods-item .controls::after {
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: #ffffff;
+}
+.goods-item .controls::before {
+	content: "";
+	top: 0;
+	left: 17px;
+}
+.goods-item .controls::after {
+	content: "";
+	top: 0;
+	left: 34px;
+}
+.goods-item .goods-modal {
+	position: absolute;
+	display: none;
+	bottom: 20px;
+	left: 20px;
+	padding: 0 30px;
+	width: 140px;
+	height: 200px;
+	background: #ffffff;
+	text-align: center;
+	opacity: 1;
+	z-index: 100;
+}
+.goods-item .goods-modal h3 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.goods-item .goods-modal p {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+.goods-modal .goods-modal-btn {
+	display: block;
+	padding: 10px 0;
+	width: 140px;
+	height: 18px;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-radius: 3px;
+	background: #fb565a;
+}
+.goods-modal-wrapper:hover .goods-modal {
+	display: block;
+}
+
+/* paginator */
+
+.paginator .paginator-item {
+ display: inline-block;
+ vertical-align: top;
+ box-sizing: border-box;
+ padding: 10px 0;
+ margin-right: 5px;
+ width: 38px;
+ height: 38px;
+ background: #f1f1f1;
+ border-radius: 3px;
+ font-size: 12px;
+ line-height: 18px;
+ color: #000000;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+}
+.paginator .paginator-item:hover {
+	background: #e5e5e5;
+}
+.paginator .paginator-item:active {
+	background: #d5d5d5;
+	padding: 7px 0;
+	border-top: 3px solid #b5b5b5;
+}
+.paginator .paginator-item.current {
+	background: #ffffff;
+	padding: 8px 0;
+	border: 2px solid #f2f2f2;
+	cursor: auto;
+}
+.paginator .next {
+	width: 140px;
 }

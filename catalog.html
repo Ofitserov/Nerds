@@ -33,11 +33,133 @@
 	<main class="inner-main container">
     <div class="row clearfix">
       <div class="column-left">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ab deleniti, provident ut ipsa, quasi sit perferendis nulla repellendus dignissimos porro dolor saepe assumenda ducimus libero aliquam eius veniam nostrum, explicabo praesentium cumque tempora. Reiciendis velit maiores molestiae! Impedit unde eius sunt ipsa eos doloribus illum consectetur architecto assumenda tempore autem earum sequi eaque molestiae beatae saepe nisi fugit, iure atque ab, repellendus debitis consequuntur repudiandae, natus. Quasi mollitia tempora odit, odio quia magni, quis inventore ipsa blanditiis maiores reprehenderit dignissimos debitis esse iure facere rem minus asperiores, quas. Voluptates, maiores. Iste accusantium fugiat, consectetur commodi quo impedit explicabo maiores.</p>
+				<aside>
+					<form class="sorting-form" action="#" method="get">
+						<p>СТОИМОСТЬ:</p>
+						<div class="form-block">
+							<div class="range-slider">
+								<span class="left-control"></span>
+								<span class="right-control"></span>
+							</div>
+							<div class="range-input">
+								<label for="min">от</label>
+								<input id="min" type="text" name ="min" value="">
+								<label for="max">до</label>
+								<input id="max" type="text" name="max" value="" pattern="[0-9]{,5}">
+							</div>
+						</div>
+						<p>СЕТКА:</p>
+						<div class="form-block">
+							<input type="radio" id="adaptive" name="grid" value="adaptive" checked>
+							<label class="radio" for="adaptive">Адаптивная</label>
+							<input type="radio" id="rubber" name="grid" value="rubber">
+							<label class="radio" for="rubber">Резиновая</label>
+							<input type="radio" id="fixed" name="grid" value="fixed">
+							<label class="radio" for="fixed">Фиксированная</label>
+						</div>
+						<p>ОСОБЕННОСТИ:</p>
+						<div class="form-block">
+							<input type="checkbox" id="slider" name="slider" value="slider" checked>
+							<label class="checkbox" for="slider">Слайдер</label>
+							<input type="checkbox" id="advantages" name="advantages" value="advantages">
+							<label class="checkbox" for="advantages">Блок преимуществ</label>
+							<input type="checkbox" id="news" name="news" value="news" checked>
+							<label class="checkbox" for="news">Новости</label>
+							<input type="checkbox" id="gallery" name="gallery" value="gallery">
+							<label class="checkbox" for="gallery">Галерея</label>
+							<input type="checkbox" id="bascket" name="bascket" value="bascket">
+							<label class="checkbox" for="bascket">Корзина</label>
+						</div>
+						<input class="submit-btn" type="submit" value="Показать">
+					</form>
+				</aside>
       </div>
       <div class="column-right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ab deleniti, provident ut ipsa, quasi sit perferendis nulla repellendus dignissimos porro dolor saepe assumenda ducimus libero aliquam eius veniam nostrum, explicabo praesentium cumque tempora. Reiciendis velit maiores molestiae! Impedit unde eius sunt ipsa eos doloribus illum consectetur architecto assumenda tempore autem earum sequi eaque molestiae beatae saepe nisi fugit, iure atque ab, repellendus debitis consequuntur repudiandae, natus. Quasi mollitia tempora odit, odio quia magni, quis inventore ipsa blanditiis maiores reprehenderit dignissimos debitis esse iure facere rem minus asperiores, quas. Voluptates, maiores. Iste accusantium fugiat, consectetur commodi quo impedit explicabo maiores.</p>
-
+				<section class="sorting clearfix">
+					<div class="type-sorting">
+						<span>Сортировка:</span>
+						<a class="active" href="">ПО ЦЕНЕ</a>
+						<a href="">ПО ТИПУ</a>
+						<a href="">ПО ФУНКЦИОНАЛУ</a>
+					</div>
+					<div class="range-sorting">
+						<a class="minimum active" href="#">min</a>
+						<a class="maximum" href="#">max</a>
+					</div>
+				</section>
+				<section class="goods">
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-1.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-2.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>					</div>
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-3.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-4.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-5.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>
+					</div>
+					<div class="goods-item">
+						<span class="controls"></span>
+						<div class="goods-modal-wrapper">
+							<img src="img/goods-6.jpg" width="240" height="240" alt="goods description">
+							<div class="goods-modal">
+								<h3>Sunset</h3>
+								<p>Интернет-магазин с личным кабинетом</p>
+								<a class="goods-modal-btn" href="#">10000</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="paginator">
+					<a class="paginator-item current">1</a>
+					<a class="paginator-item" href="#">2</a>
+					<a class="paginator-item" href="#">3</a>
+					<a class="paginator-item next" href="#">СЛЕДУЮЩАЯ</a>
+				</section>
       </div>
     </div>
 	</main>
