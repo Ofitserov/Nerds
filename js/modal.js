@@ -1,14 +1,4 @@
-var square = function(a) {
-  return a * a;
-};
 
-var sumOfSquares = (a, b) => {
-  return square(a) + square(b);
-}
-var squareSumOfSquares = (a, b) => {
-  return square(sumOfSquares(a, b));
-}
-console.log(squareSumOfSquares(113, 33));
 
 var openModal = document.querySelector('.write-us-btn'),
     modal = document.querySelector('.modal-content'),
