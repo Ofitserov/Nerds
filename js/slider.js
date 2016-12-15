@@ -7,6 +7,7 @@
     for (var i = 0; i < slides.length; i++) {
       if (slides[i].checked) {
         var currentSlide = slides[i];
+        break;
       }
     }
     return currentSlide;
@@ -16,13 +17,14 @@
     for (var i = 0; i < slides.length; i++) {
       if (slides[i].checked) {
         var nextSlide = i+1 >= slides.length ? slides[0] : slides[i+1];
+        break;
       }
     }
     return nextSlide;
   }
 
   function rotate(currentSlide, nextSlide) {
-    currentSlide.removeAttribute('checked');
+    currentSlide.checked = false;
     nextSlide.checked = true;
   }
 
@@ -40,12 +42,10 @@
       startRotate();
     });
 
-    slider.addEventListener('mouseover', function(event){
-    event.preventDefault;
+    slider.addEventListener('mouseover', function(){
     stopRotate();
   });
-    slider.addEventListener('mouseout', function(event){
-    event.preventDefault;
+    slider.addEventListener('mouseout', function(){
     startRotate();
   });
 })();
